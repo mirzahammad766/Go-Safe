@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#FFE400"
+    android:orientation="vertical"
+    tools:context=".Splash_screen">
+
+    <TextView
+        android:id="@+id/splash_textview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50sp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="center"
+
+        android:text="WELCOME!"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="40dp"
+        />
+
+    <ImageView
+        android:id="@+id/splashid_imageView"
+        android:layout_width="461dp"
+        android:layout_height="494dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        app:srcCompat="@drawable/logosh" />
+
+    <TextView
+        android:id="@+id/splash_textView2"
+        android:layout_width="399dp"
+        android:layout_height="89dp"
+        android:layout_gravity="center"
+
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="center"
+        android:text="Save Your Life !"
+        android:textColor="@color/white"
+        android:textSize="30dp" />
+
+</LinearLayout>

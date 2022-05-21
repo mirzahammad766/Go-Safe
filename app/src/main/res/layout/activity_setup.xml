@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#FFE400">
+
+
+    <TextView
+        android:id="@+id/SetuptextView1"
+        android:layout_width="195dp"
+        android:layout_height="42dp"
+        android:text="Setup"
+        android:textAlignment="center"
+        android:textColor="#364a61"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <TextView
+        android:id="@+id/SetuptextView2"
+        android:layout_width="349dp"
+        android:layout_height="94dp"
+        android:text="This application only works if you are the ony person who uses this mobile device. "
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.125" />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="103dp"
+        android:layout_height="79dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/logo" />
+
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3">
+
+        <RadioButton
+            android:id="@+id/Setup_radioButton1"
+            android:layout_width="367dp"
+            android:layout_height="106dp"
+            android:text="I am the only Person who use this mobile phone."
+            android:textColor="#364a61"
+            android:textSize="20dp"
+           />
+
+        <RadioButton
+            android:id="@+id/setup_radioButton2"
+            android:layout_width="367dp"
+            android:layout_height="106dp"
+            android:text="I share this phone with somebody else."
+            android:textColor="#364a61"
+            android:textSize="20dp"
+          />
+    </RadioGroup>
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="303dp"
+        android:layout_height="198dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.896"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/workicon" />
+
+    <TextView
+        android:id="@+id/SetuptextView3"
+        android:layout_width="344dp"
+        android:layout_height="61dp"
+        android:text="This application requires access to your Bluetooth. "
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.563" />
+
+    <Button
+        android:id="@+id/Allow_Bluetooth_button"
+        android:layout_width="267dp"
+        android:layout_height="42dp"
+        android:layout_gravity="center"
+        android:background="@drawable/btn_bg"
+        android:text="Allow Bluetooth Access"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/white"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.642" />
+
+    <Button
+        android:id="@+id/setup_con_button"
+        android:layout_width="261dp"
+        android:layout_height="39dp"
+        android:layout_gravity="center"
+        android:background="@drawable/btn2_bg"
+        android:text="Continue ->"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/white"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
